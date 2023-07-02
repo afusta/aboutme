@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import { relative } from "path";
 import styles from "../styles/Home.module.css";
+import containerStyles from "../styles/HomeContainers.module.css";
 
 export default function Home() {
   return (
@@ -10,8 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <section id="hi" className={`${styles.section1bgimage}`}>
+      <main className={styles.main} style={{ overflow: "clip" }}>
+        <section
+          id="hi"
+          className={`${styles.section1bgimage}`}
+          // style={{ position: "fixed" }}
+        >
           <div className={`${styles.section1shadowbg} ${styles.container}`}>
             {/* <h1
               className={styles.title}
@@ -24,16 +30,20 @@ export default function Home() {
               sta<span className={styles.shadowspan}>ck</span>
             </h1> */}
 
-            <div style={{ width: "100%", padding: "0 20% 0 20%" }}>
+            <div style={{ width: "100%", padding: "0 15% 0 15%" }}>
               <p
                 style={{
                   color: "white",
-                  fontSize: "100px",
-                  lineHeight: 0.8,
+                  fontSize: "90px",
+                  lineHeight: 1,
                   fontWeight: "bolder",
                 }}
               >
-                Hello I'm Pierre, I'm a Full Stack engineer
+                Hello I'm Pierre,
+                <br />
+                I'm a Full Stack Developer
+                <br />
+                and computer science engineer
               </p>
             </div>
             {/* <Image
@@ -44,39 +54,53 @@ export default function Home() {
             /> */}
           </div>
         </section>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section
+          className={containerStyles.section}
+          style={{ backgroundColor: "yellow", position: "relative" }}
+        >
+          <div className={containerStyles.flexContainer}>
+            <div
+              style={{ backgroundColor: "red", width: "100%" }}
+              // className={containerStyles.flexItemsAboutSection}
+            >
+              <p> PICTURE </p>
+            </div>
+            <div
+              style={{ backgroundColor: "blue", width: "100%" }}
+              // className={containerStyles.flexItemsAboutSection}
+            >
+              ABOUT SECTION
+            </div>
+          </div>
+        </section>
+        <section
+          className={containerStyles.section}
+          style={{
+            backgroundColor: "blue",
+            width: "100%",
+            position: "relative",
+          }}
+        >
+          <p> WORK SECTION</p>
+        </section>
+        <section
+          className={containerStyles.section}
+          style={{ backgroundColor: "pink", position: "relative" }}
+        >
+          {" "}
+          FORM SECTION / CONTACT
+        </section>
+        <section
+          className={containerStyles.section}
+          style={{
+            backgroundColor: "blue",
+            width: "100%",
+            position: "relative",
+          }}
+        ></section>
       </main>
 
-      <footer>
+      <footer style={{ backgroundColor: "purple" }}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"

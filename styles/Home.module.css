@@ -12,7 +12,10 @@
   min-height: 100vh;
   background-image: url("../public/images/computer.jpg");
   background-size: cover;
+  position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  z-index: 0;
 }
 
 .section1container {
@@ -45,6 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: clip;
 }
 .title a {
   /* color: #0070f3; */
