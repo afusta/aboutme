@@ -124,6 +124,22 @@
   height: 1em;
 }
 
+.profilePic {
+  inset: 0;
+  max-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* @media (min-width: 1024px) {
+  .profilePic {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+} */
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
