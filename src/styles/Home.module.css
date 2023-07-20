@@ -50,6 +50,10 @@
   align-items: center;
   overflow: clip;
 }
+
+.sectionTitle {
+  color: #7612c3;
+}
 .title a {
   /* color: #0070f3; */
   color: white;
@@ -134,6 +138,7 @@
 
 @media (min-width: 1024px) {
   .profilePic {
+    max-height: 100vh;
     height: 100%;
     width: 50%;
   }

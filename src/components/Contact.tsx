@@ -1,7 +1,8 @@
 import React from "react";
 import { siteConfig } from "../config/layout";
 import Image from "next/image";
-import style from "../styles/HomeContainers.module.css";
+import containerStyle from "../styles/HomeContainers.module.css";
+import style from "../styles/Home.module.css";
 import contactStyle from "../styles/contact.module.css";
 
 //images
@@ -10,7 +11,7 @@ import Link from "next/link";
 const Contacts: React.FC = () => {
   return (
     <div
-      className={style.flexContainer}
+      className={containerStyle.flexContainer}
       style={{
         padding: "30px",
         flexDirection: "column",
@@ -19,14 +20,16 @@ const Contacts: React.FC = () => {
         fontWeight: "bold",
       }}
     >
-      <p style={{ fontSize: "26px", color: "white" }}>Contact</p>
+      <p style={{ fontSize: "26px" }} className={style.sectionTitle}>
+        Contact
+      </p>
       <p>Got a problem to solve ?</p>
       <div
         style={{
           display: "flex",
           fontSize: "28px",
-          justifyContent: "space-between",
-          gap: "15px",
+          justifyContent: "space-evenly",
+          gap: "30px",
           flexWrap: "wrap",
         }}
       >
