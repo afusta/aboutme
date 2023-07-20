@@ -17,6 +17,8 @@ import Python from "../../public/images/PythonLogo.png";
 import ReduxLogo from "../../public/images/ReduxLogo.png";
 import TypeScriptLogo from "../../public/images/TypescriptLogo.png";
 import TechnoImage from "../components/TechnoImage";
+import Contacts from "../components/Contact";
+import { siteConfig } from "../config/layout";
 
 export default function Home() {
   return (
@@ -89,8 +91,9 @@ export default function Home() {
             <div
               className={containerStyles.flexItemsAboutSection}
               style={{
-                backgroundColor: "#f27a02",
-                color: "navy",
+                // backgroundColor: "#f27a02",
+                backgroundColor: siteConfig.theme.bgColor,
+                color: "white",
                 width: "100%",
                 padding: "30px 50px",
               }}
@@ -101,12 +104,11 @@ export default function Home() {
                 style={{
                   flexDirection: "column",
                   justifyContent: "center",
-                  backgroundColor: "red",
                 }}
               >
                 <p
                   style={{
-                    color: "navy",
+                    color: "white",
                     fontSize: "23px",
                     fontWeight: "Bold",
                     marginBottom: "5px",
@@ -119,12 +121,12 @@ export default function Home() {
                     fontSize: 36,
                     fontWeight: "bold",
                     margin: "5px 0",
-                    color: "navy",
+                    color: "white",
                   }}
                 >
                   Full Stack developer
                 </p>
-                <p style={{ color: "navy" }}>
+                <p style={{ color: "white" }}>
                   My expertise is to develop and design complete web
                   appliactions.
                 </p>
@@ -173,16 +175,19 @@ export default function Home() {
           <p> WORK SECTION</p>
         </section> */}
         <section
-          className={containerStyles.section}
-          style={{ backgroundColor: "pink", position: "relative" }}
+          className={containerStyles.flexContainer}
+          style={{
+            width: "100%",
+            backgroundColor: siteConfig.theme.bgColor,
+            position: "relative",
+          }}
         >
-          {" "}
-          FORM SECTION / CONTACT
+          <Contacts></Contacts>
         </section>
         <section
           className={containerStyles.section}
           style={{
-            backgroundColor: "blue",
+            backgroundColor: siteConfig.theme.bgColor,
             width: "100%",
             position: "relative",
           }}

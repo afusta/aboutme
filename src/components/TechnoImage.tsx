@@ -32,9 +32,7 @@ const TechnoImage: React.FC<Props> = ({
       >
         <Image src={src} alt={`${title} image`}></Image>
       </div>
-      <p style={{ color: "black", textAlign: "center", marginTop: "10px" }}>
-        {title}
-      </p>
+      <p style={{ textAlign: "center", marginTop: "10px" }}>{title}</p>
     </div>
   );
 };

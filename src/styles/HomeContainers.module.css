@@ -22,6 +22,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   column-gap: 10px;
+  color: "white";
   gap: 5px;
 }
 
