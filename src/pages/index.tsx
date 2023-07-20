@@ -77,11 +77,14 @@ export default function Home() {
         </section>
         <section
           className={containerStyles.section}
-          style={{ backgroundColor: "#f27a02", position: "relative" }}
+          style={{ position: "relative", width: "100%" }}
         >
           <div
             className={containerStyles.flexContainer}
-            style={{ alignItems: "flex-start" }}
+            style={{
+              alignItems: "flex-start",
+              backgroundColor: siteConfig.theme.bgColor,
+            }}
           >
             <Image
               className={styles.profilePic}
@@ -92,7 +95,6 @@ export default function Home() {
               className={containerStyles.flexItemsAboutSection}
               style={{
                 // backgroundColor: "#f27a02",
-                backgroundColor: siteConfig.theme.bgColor,
                 color: "white",
                 width: "100%",
                 padding: "30px 50px",
@@ -184,26 +186,9 @@ export default function Home() {
         >
           <Contacts></Contacts>
         </section>
-        <section
-          className={containerStyles.section}
-          style={{
-            backgroundColor: siteConfig.theme.bgColor,
-            width: "100%",
-            position: "relative",
-          }}
-        ></section>
       </main>
 
-      <footer style={{ backgroundColor: "purple" }}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
+      <footer style={{ backgroundColor: "purple" }}></footer>
 
       {/* <style jsx>{`
         footer {
