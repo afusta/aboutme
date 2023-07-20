@@ -10,7 +10,7 @@ interface Props {
 const TechnoImage: React.FC<Props> = ({
   title,
   src,
-  imgSize = 120,
+  imgSize = 100,
   imgPadding = 0,
 }) => {
   return (

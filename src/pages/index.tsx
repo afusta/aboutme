@@ -1,24 +1,22 @@
 import Head from "next/head";
 import Image from "next/image";
-import { relative } from "path";
 import styles from "../styles/Home.module.css";
 import containerStyles from "../styles/HomeContainers.module.css";
 // images
-import profilePic from "../public/images/ProfilePic.jpeg";
-import reactLogo from "../public/images/ReactLogo.png";
-import CLogo from "../public/images/CLogo.png";
-import CPPLogo from "../public/images/CPPLogo.png";
-import JSLogo from "../public/images/JSlogo.png";
-import mySQLLogo from "../public/images/mySQLLogo.png";
-import NestLogo from "../public/images/NestLogo.png";
-import NextLogo from "../public/images/NextLogo.png";
-import NodeLogo from "../public/images/NodeLogo.png";
-import PostreSQLLogo from "../public/images/PostgSQLLogo.png";
-import Python from "../public/images/PythonLogo.png";
-import ReduxLogo from "../public/images/ReduxLogo.png";
-import TypeScriptLogo from "../public/images/TypescriptLogo.png";
+import profilePic from "../../public/images/ProfilePic.jpeg";
+import reactLogo from "../../public/images/ReactLogo.png";
+import CLogo from "../../public/images/CLogo.png";
+import CPPLogo from "../../public/images/CPPLogo.png";
+import JSLogo from "../../public/images/JSlogo.png";
+import mySQLLogo from "../../public/images/mySQLLogo.png";
+import NestLogo from "../../public/images/NestLogo.png";
+import NextLogo from "../../public/images/NextLogo.png";
+import NodeLogo from "../../public/images/NodeLogo.png";
+import PostreSQLLogo from "../../public/images/PostgSQLLogo.png";
+import Python from "../../public/images/PythonLogo.png";
+import ReduxLogo from "../../public/images/ReduxLogo.png";
+import TypeScriptLogo from "../../public/images/TypescriptLogo.png";
 import TechnoImage from "../components/TechnoImage";
-import { PassThrough } from "stream";
 
 export default function Home() {
   return (
@@ -77,9 +75,12 @@ export default function Home() {
         </section>
         <section
           className={containerStyles.section}
-          style={{ backgroundColor: "yellow", position: "relative" }}
+          style={{ backgroundColor: "#f27a02", position: "relative" }}
         >
-          <div className={containerStyles.flexContainer}>
+          <div
+            className={containerStyles.flexContainer}
+            style={{ alignItems: "flex-start" }}
+          >
             <Image
               className={styles.profilePic}
               src={profilePic}
@@ -161,7 +162,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           className={containerStyles.section}
           style={{
             backgroundColor: "cyan",
@@ -170,7 +171,7 @@ export default function Home() {
           }}
         >
           <p> WORK SECTION</p>
-        </section>
+        </section> */}
         <section
           className={containerStyles.section}
           style={{ backgroundColor: "pink", position: "relative" }}

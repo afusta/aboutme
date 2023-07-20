@@ -10,7 +10,7 @@
 .section1bgimage {
   width: 100vw;
   min-height: 100vh;
-  background-image: url("../public/images/computer.jpg");
+  background-image: url("../../public/images/computer.jpg");
   background-size: cover;
   position: -webkit-sticky;
   position: sticky;
@@ -126,19 +126,18 @@
 
 .profilePic {
   inset: 0;
-  max-height: 100vh;
+  max-height: 120vh;
   width: 100%;
   object-fit: cover;
   object-position: top;
 }
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .profilePic {
-    position: absolute;
     height: 100%;
     width: 50%;
   }
-} */
+}
 
 @media (max-width: 600px) {
   .grid {
